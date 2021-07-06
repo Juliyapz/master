@@ -45,6 +45,51 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
+
+  <main class="main">
+    <div class="container">
+      <div class="main-wrapper">
+        <h1 class="main__title">
+          <strong>Услуги Электрика, Сантеxника и&nbsp;Клининг в&nbsp;Красноярске</strong>
+        </h1>
+        <form action="send.php" method="POST" class="main-form form">
+          <h2 class="form__title">Заполните форму</h2>
+          <input type="text" placeholder="Ваше имя" required minlength="2" name="name" class="form__input">
+          <input type="tel" placeholder="Телефон" required minlength="17" name="phone" class="form__input phone-numb">
+          <span class="form__text">Опишите Вашу заявку</span>
+          <textarea name="message" class="form__message"></textarea>
+          <button class="form__button" type="submit">Получить консультацию</button>
+        </form>
+        <button type="submit" data-toggle="modal" class="form__button form__button--mobile">Получить
+          консультацию</button>
+      </div>
+    </div>
+    <!-- /.container -->
+  </main>
+  <!-- /.main -->
+
+
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <svg class="modal__close">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+      <form action="send.php" method="POST" class="modal-form">
+        <h2 class="modal-form__title">Заполните форму</h2>
+        <input type="text" placeholder="Ваше имя" required minlength="2" name="name2" class="modal-form__input">
+        <input type="tel" placeholder="Телефон" required minlength="17" name="phone2"
+          class="modal-form__input phone-numb">
+        <span class="modal-form__text">Опишите Вашу заявку</span>
+        <textarea name="message2" class="modal-form__message"></textarea>
+        <button class="modal-form__button" type="submit">Получить консультацию</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

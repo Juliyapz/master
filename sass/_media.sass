@@ -1,16 +1,30 @@
 @media (max-width: 1200px)
+  .container
+    max-width: 90%
   .nav
     &__list
       margin: 0
+  .main
+    &-wrapper
+      padding: 0
+    &__title
+      font-size: 45px
+      line-height: 60px
+  .form
+    &__message
+      width: 315px
+      height: 145px
 @media (max-width: 992px)
-  .container
-    max-width: 90%
   .header
     &__logo
       margin: 10px 17px
   .nav
     &__item
       margin-right: 40px
+  .main
+    &__title
+      font-size: 36px
+      line-height: 50px
 @media (max-width: 768px)
   .header
     &-wrapper
@@ -32,6 +46,50 @@
       font-size: 14px
     &__item
       margin-right: 0
+  .main
+    padding: 55px 0
+    &-wrapper
+      flex-direction: column
+      align-items: start
+    &__title
+      font-size: 45px
+      line-height: 60px
+      margin-bottom: 30px
+  .form
+    display: none
+    &__button
+      &--mobile
+        display: block
+        background-color: $gray
+        padding: 20px 30px
 @media (max-width: 576px)
   .nav
     margin-left: 0
+  .main
+    &__title
+      font-size: 35px
+      line-height: 45px
+      margin-bottom: 25px
+  .form
+    &__button
+      &--mobile
+        font-size: 16px
+        padding: 10px 20px
+  .modal
+    &-form
+      &__title
+        font-size: 20px
+        line-height: 20px
+      &__input
+        font-size: 16px
+        line-height: 20px
+      &__text
+        font-size: 16px
+      &__message
+        width: 250px
+        height: 150px
+      &__button
+        font-size: 16px
+        padding: 10px 0
+    &__dialog
+      padding-bottom: 25px
