@@ -41,4 +41,37 @@ $(document).ready(function () {
 
   $('.phone-numb').mask('+7(000) 000-00-00');
 
+  $("#el").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1000);
+  });
+
+  $("#nav").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1000);
+  });
+
+});
+
+//слайдер электрика
+
+const electric = new Swiper('.electric__slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
 });

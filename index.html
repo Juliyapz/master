@@ -8,8 +8,9 @@
   <title>Мастер в дом</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allan&family=Comfortaa:wght@400;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Comfortaa:wght@400;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,10 +21,10 @@
         <div class="header__logo">
           <img src="img/logo.png" alt="" class="logo">
         </div>
-        <nav class="nav header__nav">
+        <nav id="nav" class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Электрика</a>
+              <a href="#el" class="nav__link">Электрика</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Сантехника</a>
@@ -52,7 +53,7 @@
         <h1 class="main__title">
           <strong>Услуги Электрика, Сантеxника и&nbsp;Клининг в&nbsp;Красноярске</strong>
         </h1>
-        <form action="send.php" method="POST" class="main-form form">
+        <form id="form" action="send.php" method="POST" class="main-form form">
           <h2 class="form__title">Заполните форму</h2>
           <input type="text" placeholder="Ваше имя" required minlength="2" name="name" class="form__input">
           <input type="tel" placeholder="Телефон" required minlength="17" name="phone" class="form__input phone-numb">
@@ -67,6 +68,62 @@
     <!-- /.container -->
   </main>
   <!-- /.main -->
+  <section id="el" class="electric">
+    <h2 class="electric__title">Электрика</h2>
+    <div class="electric-wrapper">
+      <ul class="electric__list">
+        <li class="electric__item">Поиск и устранение неисправностей</li>
+        <li class="electric__item">Штробление стен</li>
+        <li class="electric__item">Замена розеток и выключателей</li>
+        <li class="electric__item">Перенос розеток и выключателей</li>
+        <li class="electric__item">Замена электропроводки</li>
+        <li class="electric__item">Установка электросчетчиков</li>
+        <li class="electric__item">Установка люстр и светилиников</li>
+      </ul>
+      <div class="swiper-container electric__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="electric-slide">
+              <img src="img/electric-slider-1.jpg" alt="Фото работы" class="electric__slider-img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="electric-slide">
+              <img src="img/electric-slider-2.jpeg" alt="Фото работы" class="electric__slider-img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="electric-slide">
+              <img src="img/electric-slider-3.jpg" alt="Фото работы" class="electric__slider-img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="electric-slide">
+              <img src="img/electric-slider-4.jpeg" alt="Фото работы" class="electric__slider-img">
+            </div>
+          </div>
+        </div>
+        <svg class="button-prev">
+          <use xlink:href="img/sprite.svg#button-prev"></use>
+        </svg>
+        <svg class="button-next">
+          <use xlink:href="img/sprite.svg#button-next"></use>
+        </svg>
+      </div>
+    </div>
+    <!-- /.electric-wrapper -->
+    <a href="#form" class="button">
+      <button class="button__but">
+        Получить консультацию
+      </button>
+    </a>
+    <button data-toggle="modal" class="button button--mobile">
+      Получить консультацию
+    </button>
+  </section>
+  <!-- /.electric -->
 
 
   <div class="modal">
@@ -87,8 +144,10 @@
     </div>
   </div>
 
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/sliders.js"></script>
   <script src="js/main.js"></script>
 </body>
 
