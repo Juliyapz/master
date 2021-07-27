@@ -14,6 +14,15 @@
     &__message
       width: 315px
       height: 145px
+  .electric
+    &__list
+      font-size: 20px
+      line-height: 20px
+    &__slider
+      width: 49%
+      height: 340px
+      &-img
+        height: 340px
 @media (max-width: 992px)
   .header
     &__logo
@@ -25,6 +34,26 @@
     &__title
       font-size: 36px
       line-height: 50px
+  .electric
+    padding: 50px 3% 47px 3%
+    &__title
+      font-size: 35px
+      line-height: 40px
+      width: 195px
+      margin-bottom: 58px
+    &-wrapper
+      flex-direction: column
+    &__slider
+      align-self: center
+      flex-basis: auto
+      height: 405px
+      &-img
+        height: 406px
+  .button
+    &-link
+      display: none
+    &-mobile
+      display: block
 @media (max-width: 768px)
   .header
     &-wrapper
@@ -61,7 +90,18 @@
       &--mobile
         display: block
         background-color: $gray
-        padding: 20px 30px
+        padding: 20px
+  .electric
+    &__slider
+      width: 90%
+      height: 400px
+      &-img
+        height: 400px
+  .button
+    &-mobile
+      font-size: 16px
+      padding: 10px 20px
+      width: auto
 @media (max-width: 576px)
   .nav
     margin-left: 0
@@ -93,3 +133,16 @@
         padding: 10px 0
     &__dialog
       padding-bottom: 25px
+  .electric
+    padding: 35px 2% 40px 2%
+    &__title
+      font-size: 30px
+      line-height: 35px
+      width: 175px
+      margin-bottom: 35px
+    &__list
+      font-size: 13px
+      line-height: 15px
+    &__slider
+      height: 30%
+      margin-bottom: 35px
