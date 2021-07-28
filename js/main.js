@@ -55,6 +55,13 @@ $(document).ready(function () {
     $('body,html').animate({ scrollTop: top }, 1000);
   });
 
+  $("#pl").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1000);
+  });
+
   $("#nav").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
@@ -74,6 +81,24 @@ const electric = new Swiper('.electric__slider', {
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+});
+
+//слайдер сантехника
+const plumbing = new Swiper('.plumbing__slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.plumbing-button-next',
+    prevEl: '.plumbing-button-prev',
   },
 
   keyboard: {

@@ -25,6 +25,15 @@
       height: 340px
       &-img
         height: 340px
+  .plumbing
+    &__list
+      font-size: 20px
+      line-height: 20px
+    &__slider
+      width: 49%
+      height: 340px
+      &-img
+        height: 340px
 @media (max-width: 992px)
   .header
     &__logo
@@ -41,15 +50,15 @@
   .electric
     padding: 50px 3% 47px 3%
     &__title
-      font-size: 35px
-      line-height: 40px
       width: 195px
       margin-bottom: 58px
+      font-size: 35px
+      line-height: 40px
     &-wrapper
       flex-direction: column
     &__slider
-      width: 100%
       align-self: center
+      width: 100%
       height: 500px
       &-img
         height: 500px
@@ -57,9 +66,9 @@
     padding-top: 48px
     padding-bottom: 40px
     &__title
+      width: 155px
       font-size: 35px
       line-height: 40px
-      width: 155px
     &__list
       font-size: 20px
       line-height: 20px
@@ -69,6 +78,23 @@
         margin-left: 30px
     &-wrapper
       margin-bottom: 15px
+  .plumbing
+    padding: 50px 3% 47px 3%
+    &__title
+      width: 195px
+      margin-bottom: 58px
+      font-size: 35px
+      line-height: 40px
+    &-wrapper
+      flex-direction: column
+    &__slider
+      align-self: center
+      width: 100%
+      height: 500px
+      margin-bottom: 50px
+      &-img
+        height: 500px
+        width: 100%
   .button
     &-link
       display: none
@@ -101,16 +127,16 @@
       flex-direction: column
       align-items: start
     &__title
+      margin-bottom: 30px
       font-size: 45px
       line-height: 60px
-      margin-bottom: 30px
   .form
     display: none
     &__button
       &--mobile
         display: block
-        background-color: $gray
         padding: 20px
+        background-color: $gray
   .electric
     &__slider
       height: 400px
@@ -128,24 +154,29 @@
       &--right
         text-align: center
         margin: 0
+  .plumbing
+    &__slider
+      height: 400px
+      &-img
+        height: 400px
   .button
     &-mobile
-      font-size: 16px
       padding: 10px 20px
       width: auto
+      font-size: 16px
 @media (max-width: 576px)
   .nav
     margin-left: 0
   .main
     &__title
+      margin-bottom: 25px
       font-size: 35px
       line-height: 45px
-      margin-bottom: 25px
   .form
     &__button
       &--mobile
-        font-size: 16px
         padding: 10px 20px
+        font-size: 16px
   .modal
     &-form
       &__title
@@ -160,17 +191,17 @@
         width: 250px
         height: 150px
       &__button
-        font-size: 16px
         padding: 10px 0
+        font-size: 16px
     &__dialog
       padding-bottom: 25px
   .electric
     padding: 35px 2% 40px 2%
     &__title
-      font-size: 30px
-      line-height: 35px
       width: 175px
       margin-bottom: 35px
+      font-size: 30px
+      line-height: 35px
     &__list
       font-size: 13px
       line-height: 15px
@@ -179,10 +210,23 @@
   .cleaning
     padding: 35px 2% 40px 2%
     &__title
-      font-size: 30px
-      line-height: 35px
       width: 130px
       margin-bottom: 30px
+      font-size: 30px
+      line-height: 35px
     &__list
       font-size: 13px
       line-height: 15px
+  .plumbing
+    padding: 35px 2% 40px 2%
+    &__title
+      width: 175px
+      margin-bottom: 35px
+      font-size: 30px
+      line-height: 35px
+    &__list
+      margin-bottom: 0
+      font-size: 13px
+      line-height: 15px
+    &__slider
+      margin-bottom: 35px

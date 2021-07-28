@@ -1,4 +1,4 @@
-.electric
+.plumbing
   display: flex
   flex-direction: column
   padding: 80px 3% 47px 3%
@@ -21,7 +21,8 @@
     justify-content: center
   &__list
     padding: 0
-    margin: 0 15px 0 0
+    margin: 0 15px 44px 0
+    list-style: none
     font-family: $comfortaa
     font-style: normal
     font-weight: normal
@@ -30,36 +31,36 @@
     text-align: center
     letter-spacing: 0.05em
     color: $light
-    list-style: none
   &__item
     padding-bottom: 26px
   &__slider
     position: relative
     width: 620px
     height: 404px
-    margin: 0 0 64px 0
+    margin: 0
     background-color: $light
     border-radius: 8px
     overflow: hidden
     &-img
       width: 100%
-      height: 404px
+      min-height: 100%
+      max-height: 100%
       object-fit: cover
-.button-next
-  position: absolute
-  top: 50%
-  right: 5%
-  z-index: 99
-  transform: translateY(-50%)
-  width: 30px
-  fill: $green
-  cursor: pointer
-.button-prev
-  position: absolute
-  top: 50%
-  left: 5%
-  z-index: 99
-  transform: translateY(-50%)
-  width: 30px
-  fill: $green
-  cursor: pointer
+  &-button-next
+    position: absolute
+    top: 50%
+    right: 5%
+    transform: translateY(-50%)
+    z-index: 99
+    width: 30px
+    fill: $green
+    cursor: pointer
+  &-button-prev
+    position: absolute
+    top: 50%
+    left: 5%
+    transform: translateY(-50%)
+    z-index: 99
+    width: 30px
+    fill: $green
+    cursor: pointer
