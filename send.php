@@ -35,7 +35,7 @@ if (!empty($name2 == "") && !empty($phone2 == "") && !empty($message2 == "")) {
         // Настройки вашей почты
         $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
         $mail->Username   = 'juliya.ser.kovtun@gmail.com'; // Логин на почте
-        $mail->Password   = 'wv777k1yu5s93'; // Пароль на почте
+        $mail->Password   = ''; // Пароль на почте
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
         $mail->setFrom('juliya.ser.kovtun@gmail.com', 'Юлия Кремлева'); // Адрес самой почты и имя отправителя
